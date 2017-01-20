@@ -1,2 +1,2 @@
-# vpw2017
-Oefendingen
+# vpw
+Oefeningen
