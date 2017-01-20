@@ -11,7 +11,7 @@ leesRijen n a = do
 
 leesRij :: Int -> Int -> [Int] -> IO ()
 leesRij a 0 k = do
-  print $ (show a)++" "++show(minimum k)++" "++show(maximum k)
+  putStr $ (show a)++" "++show(minimum k)++" "++show(maximum k)
 leesRij a i k = do
   n <- read `liftM` getLine :: IO Int
   leesRij a (i-1) (n:k)
