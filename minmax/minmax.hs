@@ -7,6 +7,7 @@ leesRijen 0 a = return ()
 leesRijen n a = do
    i <- read `liftM` getLine :: IO Int
    leesRij a i []
+   if n /= 1 then putChar '\n' else return ()
    leesRijen (n-1) (a+1)
 
 leesRij :: Int -> Int -> [Int] -> IO ()
